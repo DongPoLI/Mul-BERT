@@ -2,6 +2,15 @@
 
 Pytorch implementation of **Mul-BERT**:  [Relation Classification Based on Entity Product with Semantic Information](http://) **Under Review**
 
+This paper proposes a total of three model structures (**mul-bert**, **mul-bert-a**, **mul-bert-b**),   The official score on the SemEval 2010 Task 8 dataset is up to **90.72** (Macro-F1).
+
+**Official Evaluation Results on SemEval 2010 Task 8:**
+ | Models | Base (Macro-F1 / %)  | Large(Macro-F1 / %)|
+ |:----:|:-----:|:------:|
+ |Mul-Bert-a| **88.84** | **89.55** |
+ |Mul-Bert-b| **89.17** | **90.72 (91.05\*)**|
+ |Mul-Bert| **89.43** | **90.28** |
+
 # Model Architecture
 <!--
 ![mul-bert model](images/mul-bert.png)
@@ -10,8 +19,6 @@ Pytorch implementation of **Mul-BERT**:  [Relation Classification Based on Entit
 height="100" width="100"
 <img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert.png" width="25%" height="25%"
 -->
-
-This paper proposes a total of three model structures (**mul-bert**, **mul-bert-a**, **mul-bert-b**), the following is the corresponding model structure diagram .
 ## 1. mul-bert model Architecture
 <center>
 
@@ -96,20 +103,52 @@ P =  89.50%     R =  91.09%     F1 =  90.28%
 [mul-bert百度]:https://pan.baidu.com/s/1-cYUkoZzNq_g1IBNx9T89g  
 [mul-bert-google]:https://drive.google.com/drive/folders/1Q_zfMmZfO_8RtHaQ9QO6v3D6Dwm1Y7fe
 
-**2. Mul-Bert-a**:
+**2. Mul-Bert-a**: download URL: [百度网盘 5w71][mul-bert-a百度],  [google Drive][mul-bert-a-google]
 ```bash
 cd mul_bert_a
 python mul_bert_a_Test
 ```
+BERT Base Results: 
+```
+Micro-averaged result (excluding Other):
+P = 2039/2305 =  88.46%     R = 2039/2263 =  90.10%     F1 =  89.27%
 
-**3. Mul-Bert-a**:
+MACRO-averaged result (excluding Other):
+P =  88.04%     R =  89.66%     F1 =  88.84%
+
+<<< The official score is (9+1)-way evaluation with directionality taken into account: macro-averaged F1 = 88.84% >>>
+```
+BERT Large Results:
+```
+Micro-averaged result (excluding Other):
+P = 2068/2331 =  88.72%     R = 2068/2263 =  91.38%     F1 =  90.03%
+
+MACRO-averaged result (excluding Other):
+P =  88.31%     R =  90.87%     F1 =  89.55%
+
+<<< The official score is (9+1)-way evaluation with directionality taken into account: macro-averaged F1 = 89.55% >>>
+```
+[mul-bert-a百度]:https://pan.baidu.com/s/1N3nNVLG8wr9NzO5IjWGleA  
+[mul-bert-a-google]:https://drive.google.com/drive/folders/1OUBiW8hq4Pi9PUc618gxPJ3GU4jk8rV7?usp=sharing
+**3. Mul-Bert-b**:  [百度网盘  8hwb][mul-bert-b百度], [google Drive][mul-bert-b-google]
 ```bash
 cd mul_bert_b
 python mul_bert_b_Test
 ```
+BERT Large Results:
+```
+Micro-averaged result (excluding Other):
+P = 2081/2308 =  90.16%     R = 2081/2263 =  91.96%     F1 =  91.05%
+
+MACRO-averaged result (excluding Other):
+P =  89.98%     R =  91.52%     F1 =  90.72%
+
+<<< The official score is (9+1)-way evaluation with directionality taken into account: macro-averaged F1 = 90.72% >>>
+```
+[mul-bert-b百度]:https://pan.baidu.com/s/16vNZAnh4nZMoO7O-KQILMQ 
+[mul-bert-b-google]:https://drive.google.com/drive/folders/1Fwz6sbd05vhtnvAaa9b68pA-TJmwdUb9?usp=sharing
 **Remarks:**
 > Modify BERT large or base , and modify the model loading path in **config.py**;
-> out result 
 
 # References
 [Semeval 2010 Task 8 Dataset](https://drive.google.com/file/d/0B_jQiLugGTAkMDQ5ZjZiMTUtMzQ1Yy00YWNmLWJlZDYtOWY1ZDMwY2U4YjFk/view?sort=name&layout=list&num=50)  
