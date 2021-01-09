@@ -39,9 +39,13 @@ This paper proposes a total of three model structures (**mul-bert**, **mul-bert-
   * The average value of two entity;  ->  **$H_{e1}=\frac{1}{j-i+1}\sum_{t=i}^{j}H_t$**, **$H_{e2}=\frac{1}{m-k+1}\sum_{t=k}^{m}H_t$**
 
 **2. Formulas for the next steps of the three models**
-* **Mul-Bert**:   $E_{e1}=Linear(H_{e1}) $,  $ E_{e2} = Linear(H_0 + H_{e2}) $,$out = softmax(\frac{E_{e1}*E_{e2}^T}{\sqrt{d}})$
+<!--
+* **Mul-Bert**:   $E_{e1}=Linear(H_{e1})$,  $ E_{e2} = Linear(H_0 + H_{e2}) $,$out = softmax(\frac{E_{e1}*E_{e2}^T}{\sqrt{d}})$
 * **Mul-Bert-a**: $ E_{e1}=Linear(H_0 + H_{e1}) $, $E_{e2}=Linear(H_{e2})$,   $out = softmax(\frac{E_{e1}*E_{e2}^T}{\sqrt{d}})$
 * **Mul-Bert-b**:   $ E_{e1}=Linear(H_0 + H_{e1}) $, $E_{e2}=Linear(H_0 + H_{e2})$,   $out = softmax(\frac{E_{e1}*E_{e2}^T}{\sqrt{d}})$
+-->
+![formula](images/formulat.png)
+
 > **Remarks:**
 >> * Linear (Dense)  is fully connected layer;
 >> * The **Reshape** operation is omitted in the formula for the convenience of explanation;  **Reshape operation is a key operation, you can read the code if you don‘t understand**
