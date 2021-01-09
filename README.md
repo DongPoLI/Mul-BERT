@@ -10,8 +10,11 @@ Pytorch implementation of **Mul-BERT**:  [Relation Classification Based on Entit
 height="100" width="100"
 <img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert.png" width="25%" height="25%"
 -->
+<center>
+<img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert.png" width="25%" height="25%">  
 
-<img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert.png" width="800">
+mul-bert model architecture
+</center>
 
 # Method
 
