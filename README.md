@@ -20,9 +20,17 @@ This paper proposes a total of three model structures (**mul-bert**, **mul-bert-
 </center>
 
 ## 2. mul-bert-a model Architecture
+<center>
 
+<img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert-a.png" width="800">  
+
+</center>
 ## 3. mul-bert-b model Architecture
+<center>
 
+<img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert-b.png" width="800">  
+
+</center>
 
 # Method
 
