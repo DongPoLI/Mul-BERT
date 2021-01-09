@@ -35,9 +35,11 @@ This paper proposes a total of three model structures (**mul-bert**, **mul-bert-
 
 # Method
 **1. Get three vectors from BERT**
+<!--
   * The word embedding vector of [CLS]  token;  ->  **$H_0$**  as the Semantic information
   * The average value of two entity;  ->  **$H_{e1}=\frac{1}{j-i+1}\sum_{t=i}^{j}H_t$**, **$H_{e2}=\frac{1}{m-k+1}\sum_{t=k}^{m}H_t$**
-
+-->
+![formula 1](images/formula1.png)
 **2. Formulas for the next steps of the three models**
 <!--
 * **Mul-Bert**:   $E_{e1}=Linear(H_{e1})$,  $ E_{e2} = Linear(H_0 + H_{e2}) $,$out = softmax(\frac{E_{e1}*E_{e2}^T}{\sqrt{d}})$
