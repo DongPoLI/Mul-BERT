@@ -4,7 +4,12 @@ Pytorch implementation of **Mul-BERT**:  [Relation Classification Based on Entit
 
 # Model Architecture
 
-model architecture 
+![mul-bert model](images/mul-bert.png)
+
+![mul-bert-a model](images/mul-bert-a.png)
+
+
+![mul-bert-b model](images/mul-bert-b.png)
 
 # Method
 
