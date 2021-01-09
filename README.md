@@ -63,12 +63,38 @@ This paper proposes a total of three model structures (**mul-bert**, **mul-bert-
 * pandas    >=   0.25.0
 
 # How to RUN
-**1. Mul-Bert**:
+**The output is in the SemEval-2010 Task 8 Test Dataset Official Evaluation Results**
+
+**first,  Need to download the corresponding model and put it in the Model folder under each model**
+
+**1. Mul-Bert**:   model checkpoint download URL:  [百度网盘 密码: 38fo][mul-bert百度];      [google Drive][mul-bert-google]
 ```bash 
 cd mul_bert
 python mul_bert_Test.py
 ```
+Bert Base Results: 
+```
+Micro-averaged result (excluding Other):
+P = 2055/2311 =  88.92%     R = 2055/2263 =  90.81%     F1 =  89.86%
 
+MACRO-averaged result (excluding Other):
+P =  88.64%     R =  90.27%     F1 =  89.43%
+
+<<< The official score is (9+1)-way evaluation with directionality taken into account: macro-averaged F1 = 89.43% >>>
+```
+
+Bert Large Results:
+```
+Micro-averaged result (excluding Other):
+P = 2072/2308 =  89.77%     R = 2072/2263 =  91.56%     F1 =  90.66%
+
+MACRO-averaged result (excluding Other):
+P =  89.50%     R =  91.09%     F1 =  90.28%
+
+<<< The official score is (9+1)-way evaluation with directionality taken into account: macro-averaged F1 = 90.28% >>>
+```
+[mul-bert百度]:https://pan.baidu.com/s/1-cYUkoZzNq_g1IBNx9T89g  
+[mul-bert-google]:https://drive.google.com/drive/folders/1Q_zfMmZfO_8RtHaQ9QO6v3D6Dwm1Y7fe
 
 **2. Mul-Bert-a**:
 ```bash
@@ -83,6 +109,7 @@ python mul_bert_b_Test
 ```
 **Remarks:**
 > Modify BERT large or base , and modify the model loading path in **config.py**;
+> out result 
 
 # References
 [Semeval 2010 Task 8 Dataset](https://drive.google.com/file/d/0B_jQiLugGTAkMDQ5ZjZiMTUtMzQ1Yy00YWNmLWJlZDYtOWY1ZDMwY2U4YjFk/view?sort=name&layout=list&num=50)  
