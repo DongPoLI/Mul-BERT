@@ -3,13 +3,15 @@
 Pytorch implementation of **Mul-BERT**:  [Relation Classification Based on Entity Product with Semantic Information](http://) **Under Review**
 
 # Model Architecture
-
+<!--
 ![mul-bert model](images/mul-bert.png)
-
 ![mul-bert-a model](images/mul-bert-a.png)
-
-
 ![mul-bert-b model](images/mul-bert-b.png)
+height="100" width="100"
+<img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert.png" width="25%" height="25%"
+-->
+
+<img src="https://github.com/DongPoLI/Mul-BERT/raw/main/images/mul-bert.png" width="800">
 
 # Method
 
