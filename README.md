@@ -153,8 +153,8 @@ P =  89.98%     R =  91.52%     F1 =  90.72%
 # References
 [Semeval 2010 Task 8 Dataset](https://drive.google.com/file/d/0B_jQiLugGTAkMDQ5ZjZiMTUtMzQ1Yy00YWNmLWJlZDYtOWY1ZDMwY2U4YjFk/view?sort=name&layout=list&num=50)  
 [Huggingface Transformers](https://github.com/huggingface/transformers)  
-[R-BERT](https://github.com/monologg/R-BERT)
-
+[R-BERT](https://github.com/monologg/R-BERT)  
+[EC-BERT](https://github.com/DongPoLI/EC-BERT)
 
 
 
