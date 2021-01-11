@@ -1,6 +1,6 @@
 # Mul-BERT
 
-Pytorch implementation of **Mul-BERT**:  [Relation Classification Based on Entity Product with Semantic Information](http://) **Under Review**
+Pytorch implementation of **Mul-BERT**:  [Relation Classification Based on Entity Product with Semantic Information](http://) **Under Review** **not public yet**
 
 This paper proposes a total of three model structures (**mul-bert**, **mul-bert-a**, **mul-bert-b**),   The official score on the SemEval 2010 Task 8 dataset is up to **90.72** (Macro-F1).
 
